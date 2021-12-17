@@ -60,7 +60,7 @@ var quizQuestions = [{
 
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 76;
+var timeLeft =80;
 var timerInterval;
 var score = 0;
 var correct;
@@ -173,7 +173,7 @@ function replayQuiz(){
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 76;
+    timeLeft = 80;
     score = 0;
     currentQuestionIndex = 0;
 }
@@ -184,12 +184,12 @@ function checkAnswer(answer){
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
-        alert("That Is Correct!");
+        
         currentQuestionIndex++;
         generateQuizQuestion();
         //shown when the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        alert("That Is Incorrect.")
+        timeLeft -= 20
         currentQuestionIndex++;
         generateQuizQuestion();
         //shown when the answer is wrong.
