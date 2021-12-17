@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  background-color:rgb(236, 211, 201);
+  font-family: "Bebas Neue", cursive;
+}
+
+li {
+  padding-bottom: 3px;
+  color: white;
+  text-shadow: 1.5px 1px 3px rgb(192, 165, 226);
+  list-style-type: none;
+}
+
+p {
+  color: black;
+  text-shadow: 0.5px 0.5px white;
+  text-align: center;
+  font-size: xx-large;
+}
+h2 {
+  margin-top: -0.5rem;
+}
+input {
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+button {
+  display: inline-block;
+
+  background: linear-gradient(#e6ebad, #e5b391);
+  border-radius: 10px;
+  border: 3px double black;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  margin-top: 3px;
+}
+
+button:hover {
+  box-shadow: 4px 3px 6px #b1dce4;
+}
+
+#startpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(255, 136, 0, 0.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
+  color: #eeeeee;
+  font-size: x-large;
+  text-shadow: 0.5px 0.5px black;
+  text-align: center;
+}
+#quiz {
+  display: none;
+}
+
+#result {
+  display: none;
+}
+
+#gameover {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#highScore {
+  height: 1.5rem;
+  border: groove 2px;
+}
+
+#high-scorePage {
+  display: none;
+  width: 50%;
+  border: solid;
+  border-color: silver;
+  border-bottom-style: groove;
+  padding-bottom: 0.3rem;
+  background: lightsteelblue;
+}
+
+#highscore-header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom-style: outset;
+  margin-bottom: 0.5rem;
+  background-color: #5e6df1;
+  color: #eeeeee;
+}
+#highscoreContainer {
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#initials {
+  margin: 0.5rem;
+  height: 1.75rem;
+}
+
+#highscore-initials {
+  display: inline-block;
+  padding-left: 9.5rem;
+
+  font-weight: bold;
+}
+
+#highscore-score {
+  float: right;
+  padding-right: 8.75rem;
+  font-weight: bold;
+}
+
+#finalScore {
+  padding-bottom: 0.5rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#endGameBtns {
+  display: none;
+}
